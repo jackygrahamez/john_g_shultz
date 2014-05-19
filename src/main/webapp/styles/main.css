@@ -4,6 +4,13 @@ body {
     color: #333;
 }
 
+p {
+  padding: 20px;
+}
+.alert-warning {
+  padding: 20px;
+  border-radius: 20px;
+}
 .development {
     display: none;
     position: absolute;
@@ -40,13 +47,46 @@ body {
     background-color: red;
 }
 
+.well {
+  background-image: url("../images/background_subway.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.bike {
+  display: block;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-image: url("../images/bike.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
 .john_g_shultz {
   display: inline-block;
   width: 463px;
   height: 640px;
-  background-image: url("../images/john_g_shultz.jpg");
+  background-image: url("../images/john_g_shultz_paper.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.john_g_shultz:hover {
+  background-image: url("../images/john_g_shultz.jpg");
+  animation: animation 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation {
+    0% {
+      background-size: 120%;
+    }
+    50% {
+      background-size: 180%;
+    }
+    100% {
+      background-size: 150%;
+    }
 }
 
 .hand {
