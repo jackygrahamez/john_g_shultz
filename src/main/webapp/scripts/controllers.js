@@ -4,6 +4,43 @@
 
 johnGShultzApp.controller('MainController', ['$scope',
     function ($scope) {
+      $scope.gallery = [
+      {path : "../images/downtown.jpg", d : "10deg"},
+      {path : "../images/limelight_100.jpg", d : "-10deg"},
+      {path : "../images/horses.jpg", d : "20deg"},
+      {path : "../images/snowshoe.jpg", d : "5deg"}
+      ];
+      for (var i = 0; i < $scope.gallery.length; i++) {
+          var n = Math.floor((Math.random() * 100) + 1);
+          if (n > 50) {
+            n = n / 2;
+          } else {
+            n = n * -1;
+          }
+          n = n / 2;
+          $scope.gallery[i].d = n+"deg";
+
+          var n = Math.floor((Math.random() * 100) + 1);
+          if (n > 50) {
+            n = n / 2;
+          } else {
+            n = n * -1;
+          }
+          n = n / 2;
+          $scope.gallery[i].x = n+"px";
+
+          var n = Math.floor((Math.random() * 100) + 1);
+          if (n > 50) {
+            n = n / 2;
+          } else {
+            n = n * -1;
+          }
+          n = n / 2;
+          $scope.gallery[i].y = n+"px";
+      }
+      setTimeout(function(){
+        $(".gallery > div").draggable();
+      }, 1000);
     }]);
 
 johnGShultzApp.controller('AdminController', ['$scope',
@@ -225,9 +262,8 @@ johnGShultzApp.controller('AuditsController', ['$scope', '$translate', '$filter'
 
         $scope.today();
         $scope.previousMonth();
-        
+
         AuditsService.findByDates($scope.fromDate, $scope.toDate).then(function(data){
             $scope.audits = data;
         });
     }]);
-
