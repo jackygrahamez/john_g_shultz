@@ -17,15 +17,32 @@ johnGShultzApp.controller('MainController', ['$scope',
         $scope.gallery[i].d = randomN(true)+"deg";
         $scope.gallery[i].x = randomN(false);
         $scope.gallery[i].y = randomN(false);
-        $scope.gallery[i].desktopStyle="left:"+$scope.gallery[i].x+"px; \
+        $scope.gallery[i].desktopStyle="animation-duration: "+i+"s; \
+        left:"+$scope.gallery[i].x+"px; \
         top:"+$scope.gallery[i].y+"px; \
         -ms-transform: rotate("+$scope.gallery[i].d+"); \
         -webkit-transform: rotate("+$scope.gallery[i].d+"); \
         transform: rotate("+$scope.gallery[i].d+");";
       }
       setTimeout(function(){
-        $( ".photo " ).draggable();
+        $( ".photo " ).draggable({
+          start: function() {
+            $(".photo").click();
+          },
+          drag: function() {
+            $(".photo").click();
+          },
+          stop: function() {
+            $(".photo").click();
+          }
+        });
+        $(".photo").click(function(){
+          $(".photo").removeClass("active");
+          $(this).addClass("active");
+        });
+
       }, 1000);
+
       function randomN(negValues) {
         var n = Math.floor((Math.random() * 100) + 1);
         if (n > 50 && negValues) {
