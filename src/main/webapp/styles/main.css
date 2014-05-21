@@ -196,7 +196,18 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
+.gallery {
+  margin: 100px 0 0 50px;
+}
+.photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  margin: -50px;
+}
 .bike {
   display: block;
   height: 160px;
