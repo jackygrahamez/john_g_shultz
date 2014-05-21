@@ -5,12 +5,14 @@ server:
 spring:
     profiles: dev
     datasource:
-        dataSourceClassName: org.h2.jdbcx.JdbcDataSource
-        url: jdbc:h2:mem:jhipster
-        databaseName: 
-        serverName: 
-        username: 
-        password:
+        # dataSourceClassName: org.h2.jdbcx.JdbcDataSource
+        # url: jdbc:h2:mem:jhipster
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        url: jdbc:postgresql://ec2-54-225-182-133.compute-1.amazonaws.com/dekrmq10ij3nsl?user=nvmnxdpltcoasp&password=L93zT1195u5Kjaa5JoFFJILnXh&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+        databaseName:
+        serverName:
+        username: nvmnxdpltcoasp
+        password: L93zT1195u5Kjaa5JoFFJILnXh
 
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
@@ -52,7 +54,7 @@ hotReload:
       domain: com.john_g_shultz.site.domain
       restdto: com.john_g_shultz.site.web.rest.dto
     liquibase:
-      defaultCatalogName: 
+      defaultCatalogName:
       defaultSchema: public
     watchdir:
       - target/classes
