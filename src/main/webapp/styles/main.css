@@ -86,7 +86,6 @@ p {
   animation: appear 5s 1;
   animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.50);
-  float: left;
 }
 .photo.active {
   z-index:100;
@@ -339,45 +338,3 @@ height: 100px;
   padding:0px 0px 0px 20px;
 }
 /*end contact*/
-/* large screens ----------- */
-@media only screen
-and (max-width : 1000px) {
-  .john_g_shultz {
-    margin: 0 auto 10px;
-    width: 100%;
-  }
-.alert-warning {
-  margin: 20px!important;
-  padding: 0px!important;
-}
-.alert-warning > div {
-  padding: 0px!important;
-}  
-}
-/* mobile screens ----------- */
-@media only screen
-and (max-width : 480px) {
-  .alert-warning {
-    margin: 20px!important;
-    padding: 0px!important;
-  }
-  .alert-warning > div {
-    padding: 0px!important;
-  }
-  .photo {
-    margin: 10px auto !important;
-    left: 0px!important;
-    top: 0px!important;
-    transform: rotate(0deg)!important;
-    -ms-transform:rotate(0deg)!important; /* IE 9 */
-    -webkit-transform:rotate(0deg)!important; /* Opera, Chrome, and Safari */
-    -moz-transform:rotate(0deg)!important; /* Opera, Chrome, and Safari */
-    width: 100%;
-  }
-  .gallery {
-    margin: 0px auto;
-  }
-  .john_g_shultz {
-    margin: 0 auto;
-    width: 100%;
-  }

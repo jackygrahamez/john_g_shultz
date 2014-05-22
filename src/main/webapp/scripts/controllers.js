@@ -24,7 +24,6 @@ johnGShultzApp.controller('MainController', ['$scope',
         -webkit-transform: rotate("+$scope.gallery[i].d+"); \
         transform: rotate("+$scope.gallery[i].d+");";
       }
-      
       setTimeout(function(){
         $( ".photo " ).draggable({
           start: function() {
@@ -41,6 +40,7 @@ johnGShultzApp.controller('MainController', ['$scope',
           $(".photo").removeClass("active");
           $(this).addClass("active");
         });
+
       }, 1000);
 
       function randomN(negValues) {
