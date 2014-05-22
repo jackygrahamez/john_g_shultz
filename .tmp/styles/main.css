@@ -55,14 +55,44 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.gallery > div {
+
+.gallery {
+  margin: 100px 0 0 50px;
+}
+.photo {
+  opacity: 1;
+  display: block;
+  width: 160px;
   height: 160px;
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
   background-size: 100%;
   background-position: 50% 50%;
-  margin: 10px;
-  border-radius: 20px;
+  margin: -50px;
+  -webkit-animation: appear 5s 1; /* Safari 4+ */
+  -moz-animation:    appear 5s 1; /* Fx 5+ */
+  -o-animation:      appear 5s 1; /* Opera 12+ */
+  animation:         appear 5s 1; /* IE 10+ */
+  animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
+}
+.photo.active {
+  z-index:100;
+}
+@-webkit-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+>>>>>>> FETCH_HEAD
 }
 
 .bike {
@@ -70,7 +100,6 @@ p {
   height: 160px;
   background-repeat: no-repeat;
   background-image: url("../images/bike.jpg");
-  -webkit-background-size: 100%;
   background-size: 100%;
   background-position: 50% 50%;
 }
@@ -79,7 +108,6 @@ p {
   height: 160px;
   background-repeat: no-repeat;
   background-image: url("../images/lady_liberty.jpg");
-  -webkit-background-size: 100%;
   background-size: 100%;
   background-position: 50% 50%;
 }
@@ -94,38 +122,18 @@ p {
 
 .john_g_shultz:hover {
   background-image: url("../images/john_g_shultz.jpg");
-  -webkit-animation: animation 1s;
   animation: animation 1s;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-}
-
-@-webkit-keyframes animation {
-    0% {
-      -webkit-background-size: 120%;
-      background-size: 120%;
-    }
-    50% {
-      -webkit-background-size: 180%;
-      background-size: 180%;
-    }
-    100% {
-      -webkit-background-size: 150%;
-      background-size: 150%;
-    }
 }
 
 @keyframes animation {
     0% {
-      -webkit-background-size: 120%;
       background-size: 120%;
     }
     50% {
-      -webkit-background-size: 180%;
       background-size: 180%;
     }
     100% {
-      -webkit-background-size: 150%;
       background-size: 150%;
     }
 }
@@ -133,6 +141,7 @@ p {
 .hand {
     cursor: pointer;
 }
+
 
 #threadDump .popover, #healthCheck .popover {
     top: inherit;

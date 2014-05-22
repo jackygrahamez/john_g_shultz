@@ -5,42 +5,52 @@
 johnGShultzApp.controller('MainController', ['$scope',
     function ($scope) {
       $scope.gallery = [
-      {path : "../images/downtown.jpg", d : "10deg"},
-      {path : "../images/limelight_100.jpg", d : "-10deg"},
-      {path : "../images/horses.jpg", d : "20deg"},
-      {path : "../images/snowshoe.jpg", d : "5deg"}
+      { path: "../images/2500px-NYC_subway-4D_lowres.jpg" },
+      { path: "../images/bike.jpg" },
+      { path: "../images/downtown.jpg" },
+      { path: "../images/horses.jpg" },
+      { path: "../images/lady_liberty.jpg" },
+      { path: "../images/limelight_100.jpg" },
+      { path: "../images/snowshoe.jpg" }
       ];
       for (var i = 0; i < $scope.gallery.length; i++) {
-          var n = Math.floor((Math.random() * 100) + 1);
-          if (n > 50) {
-            n = n / 2;
-          } else {
-            n = n * -1;
-          }
-          n = n / 2;
-          $scope.gallery[i].d = n+"deg";
-
-          var n = Math.floor((Math.random() * 100) + 1);
-          if (n > 50) {
-            n = n / 2;
-          } else {
-            n = n * -1;
-          }
-          n = n / 2;
-          $scope.gallery[i].x = n+"px";
-
-          var n = Math.floor((Math.random() * 100) + 1);
-          if (n > 50) {
-            n = n / 2;
-          } else {
-            n = n * -1;
-          }
-          n = n / 2;
-          $scope.gallery[i].y = n+"px";
+        $scope.gallery[i].d = randomN(true)+"deg";
+        $scope.gallery[i].x = randomN(false);
+        $scope.gallery[i].y = randomN(false);
+        $scope.gallery[i].desktopStyle="animation-duration: "+i+"s; \
+        left:"+$scope.gallery[i].x+"px; \
+        top:"+$scope.gallery[i].y+"px; \
+        -ms-transform: rotate("+$scope.gallery[i].d+"); \
+        -webkit-transform: rotate("+$scope.gallery[i].d+"); \
+        transform: rotate("+$scope.gallery[i].d+");";
       }
       setTimeout(function(){
-        $(".gallery > div").draggable();
+        $( ".photo " ).draggable({
+          start: function() {
+            $(".photo").click();
+          },
+          drag: function() {
+            $(".photo").click();
+          },
+          stop: function() {
+            $(".photo").click();
+          }
+        });
+        $(".photo").click(function(){
+          $(".photo").removeClass("active");
+          $(this).addClass("active");
+        });
+
       }, 1000);
+
+      function randomN(negValues) {
+        var n = Math.floor((Math.random() * 100) + 1);
+        if (n > 50 && negValues) {
+          n = n * -1;
+        }
+        n = (n / 3);
+        return n;
+      }
     }]);
 
 johnGShultzApp.controller('AdminController', ['$scope',
