@@ -6,11 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>john_g_shultz</title>
+        <title>John Shultz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/293080bf.main.css"/>
+        <link rel="stylesheet" href="styles/04b40e40.main.css"/>
     </head>
     <body ng-app="johnGShultzApp" ng-controller="MainController">
         <!--[if lt IE 10]>
@@ -48,6 +48,12 @@
                             <li ng-switch-when="false"><a href="#/login"><span class="glyphicon glyphicon-log-in"></span>
                                 &nbsp;<span translate="global.menu.account.login">Authenticate</span></a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-file"></span>
+                            <span>Resume</span>
+                        </a>
                     </li>
                     <li ng-switch-when="true" ng-show="isAuthorized(userRoles.admin)" class="dropdown pointer" ng-controller="AdminController">
                         <a class="dropdown-toggle" data-toggle="dropdown">
@@ -100,7 +106,7 @@
                         </ul>
                     </li>
                 </ul>
-                <h3 class="text-muted">JHipster</h3>
+                <h3 class="text-muted">John Shultz</h3>
             </div>
 
             <div class="well" ng-view=""></div>
@@ -123,6 +129,7 @@
         <!-- build:js scripts/scripts.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>

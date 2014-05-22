@@ -7,135 +7,6 @@ body {
 p {
   padding: 20px;
 }
-.carousel {
-  margin: 20px 0px;
-}
-.flipper {
-  margin: 20px;
-}
-.flipper div {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -webkit-background-size:contain;
-  background-size:contain;
-  width: 100%;
-  height: 160px;
-  /*
-  animation: limelight 1s;
-  animation-iteration-count: 1;
-  */
-  animation:flipper 10s infinite;
-  -webkit-animation:flipper 10s infinite; /* Safari and Chrome */
-  -webkit-animation-timing-function: steps(1, end);
-  background-image: url("../images/lady_liberty.jpg");
-}
-@keyframes flipper {
-    0% {
-      background-image: url("../images/downtown.jpg");
-    }
-    25% {
-      background-image: url("../images/horses.jpg");
-    }
-    50% {
-      background-image: url("../images/lady_liberty.jpg");
-    }
-    75% {
-      background-image: url("../images/snowshoe.jpg");
-    }
-    100% {
-      background-image: url("../images/downtown.jpg");
-    }
-}
-@-webkit-keyframes flipper {
-    0% {
-      background-image: url("../images/downtown.jpg");
-    }
-    25% {
-      background-image: url("../images/horses.jpg");
-    }
-    50% {
-      background-image: url("../images/lady_liberty.jpg");
-    }
-    75% {
-      background-image: url("../images/snowshoe.jpg");
-    }
-    100% {
-      background-image: url("../images/downtown.jpg");
-    }
-}
-
-.limelight {
-    background-image: url("../images/limelight_100.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -webkit-background-size:contain;
-    background-size:contain;
-    width: 100%;
-    height: 160px;
-    /*
-    animation: limelight 1s;
-    animation-iteration-count: 1;
-    */
-    animation:limelight 1s 1;
-    -webkit-animation:limelight 2s 1; /* Safari and Chrome */
-    -webkit-animation-timing-function: steps(1, end);
-}
-.limelight:hover {
-  background-image: url("../images/limelight_0.jpg");
-  animation:limelight 1s 1;
-  -webkit-animation:limelight 2s 1; /* Safari and Chrome */
-  -webkit-animation-timing-function: steps(1, end);
-  animation-direction:reverse;
-  -webkit-animation-direction:reverse; /* Safari and Chrome */
-}
-
-@keyframes limelight {
-    0% {
-      background-image: url("../images/limelight_0.jpg");
-    }
-    50% {
-      background-image: url("../images/limelight_50.jpg");
-    }
-    100% {
-      background-image: url("../images/limelight_100.jpg");
-    }
-}
-@-webkit-keyframes limelight {
-  0% {
-    background-image: url("../images/limelight_0.jpg");
-  }
-  10% {
-    background-image: url("../images/limelight_10.jpg");
-  }
-  20% {
-    background-image: url("../images/limelight_20.jpg");
-  }
-  30% {
-    background-image: url("../images/limelight_30.jpg");
-  }
-  40% {
-    background-image: url("../images/limelight_40.jpg");
-  }
-  50% {
-    background-image: url("../images/limelight_50.jpg");
-  }
-  60% {
-    background-image: url("../images/limelight_60.jpg");
-  }
-  70% {
-    background-image: url("../images/limelight_70.jpg");
-  }
-  80% {
-    background-image: url("../images/limelight_80.jpg");
-  }
-  90% {
-    background-image: url("../images/limelight_90.jpg");
-  }
-  100% {
-    background-image: url("../images/limelight_100.jpg");
-  }
-}
-
 .alert-warning {
   padding: 20px;
   border-radius: 20px;
@@ -182,6 +53,36 @@ p {
   background-position: 50% 50%;
 }
 
+.gallery {
+  margin: 100px 0 0 50px;
+}
+.photo {
+  opacity: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: 50% 50%;
+  margin: -50px;
+  -webkit-animation: appear 5s 1; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+  animation:         appear 5s 1; /* IE 10+ */
+  -webkit-animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
+  animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
+}
+.photo.active {
+  z-index:100;
+}
+@-webkit-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .bike {
   display: block;
   height: 160px;
@@ -191,7 +92,15 @@ p {
   background-size: 100%;
   background-position: 50% 50%;
 }
-
+.lady_liberty {
+  display: block;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-image: url("../images/lady_liberty.jpg");
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
 .john_g_shultz {
   display: inline-block;
   width: 463px;
@@ -242,6 +151,7 @@ p {
 .hand {
     cursor: pointer;
 }
+
 
 #threadDump .popover, #healthCheck .popover {
     top: inherit;

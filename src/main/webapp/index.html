@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/famfamfam-flags.css">
-        <link rel="stylesheet" href="bower_components/jquery-ui-rotatable/jquery.ui.rotatable.css">
         <!-- endbuild -->
     </head>
     <body ng-app="johnGShultzApp" ng-controller="MainController">
@@ -53,6 +52,18 @@
                             <li ng-switch-when="false"><a href="#/login"><span class="glyphicon glyphicon-log-in"></span>
                                 &nbsp;<span translate="global.menu.account.login">Authenticate</span></a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="/#/resume">
+                            <span class="glyphicon glyphicon-file"></span>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/#/contact">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <span>Contact</span>
+                        </a>
                     </li>
                     <li ng-switch-when="true" ng-show="isAuthorized(userRoles.admin)" class="dropdown pointer" ng-controller="AdminController">
                         <a class="dropdown-toggle" data-toggle="dropdown">
@@ -111,7 +122,7 @@
             <div class="well" ng-view=""></div>
 
             <div class="footer">
-                <p translate="footer">This is your footer</p>
+                <p class="pull-right">&copy; 2014 John Shultz</p>
             </div>
         </div>
 
@@ -155,7 +166,12 @@
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
-
+        <script src="scripts/resume/router.js"></script>
+        <script src="scripts/resume/controller.js"></script>
+        <script src="scripts/resume/service.js"></script>
+        <script src="scripts/contact/router.js"></script>
+        <script src="scripts/contact/controller.js"></script>
+        <script src="scripts/contact/service.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -129,7 +129,7 @@ johnGShultzApp
                     } else {
                         // Check if the customer is still authenticated on the server
                         // Try to load a protected 1 pixel image.
-                        $http({method: 'GET', url: 'protected/transparent.gif'});
+                        //$http({method: 'GET', url: 'protected/transparent.gif'});
                     }
                 });
 
