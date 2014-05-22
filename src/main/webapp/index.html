@@ -54,9 +54,15 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/#/resume">
                             <span class="glyphicon glyphicon-file"></span>
                             <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/#/contact">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <span>Contact</span>
                         </a>
                     </li>
                     <li ng-switch-when="true" ng-show="isAuthorized(userRoles.admin)" class="dropdown pointer" ng-controller="AdminController">
@@ -116,7 +122,7 @@
             <div class="well" ng-view=""></div>
 
             <div class="footer">
-                <p translate="footer">This is your footer</p>
+                <p class="pull-right">&copy; 2014 John Shultz</p>
             </div>
         </div>
 
@@ -160,6 +166,12 @@
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="scripts/resume/router.js"></script>
+        <script src="scripts/resume/controller.js"></script>
+        <script src="scripts/resume/service.js"></script>
+        <script src="scripts/contact/router.js"></script>
+        <script src="scripts/contact/controller.js"></script>
+        <script src="scripts/contact/service.js"></script>
         <!-- endbuild -->
 </body>
 </html>
