@@ -77,21 +77,29 @@ p {
   width: 160px;
   height: 160px;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
   margin: -50px;
   -webkit-animation: appear 5s 1;
+  -moz-animation: appear 5s 1;
+  -o-animation: appear 5s 1;
   animation: appear 5s 1;
-  -webkit-animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
   animation-timing-function: cubic-bezier(1,-0.65,1,-0.74);
-  -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.50);
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.50);
+  float: left;
 }
 .photo.active {
   z-index:100;
 }
 @-webkit-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes appear {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
@@ -105,7 +113,6 @@ p {
   height: 160px;
   background-repeat: no-repeat;
   background-image: url("../images/bike.jpg");
-  -webkit-background-size: 100%;
   background-size: 100%;
   background-position: 50% 50%;
 }
@@ -114,7 +121,6 @@ p {
   height: 160px;
   background-repeat: no-repeat;
   background-image: url("../images/lady_liberty.jpg");
-  -webkit-background-size: 100%;
   background-size: 100%;
   background-position: 50% 50%;
 }
@@ -129,38 +135,18 @@ p {
 
 .john_g_shultz:hover {
   background-image: url("../images/john_g_shultz.jpg");
-  -webkit-animation: animation 1s;
   animation: animation 1s;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-}
-
-@-webkit-keyframes animation {
-    0% {
-      -webkit-background-size: 120%;
-      background-size: 120%;
-    }
-    50% {
-      -webkit-background-size: 180%;
-      background-size: 180%;
-    }
-    100% {
-      -webkit-background-size: 150%;
-      background-size: 150%;
-    }
 }
 
 @keyframes animation {
     0% {
-      -webkit-background-size: 120%;
       background-size: 120%;
     }
     50% {
-      -webkit-background-size: 180%;
       background-size: 180%;
     }
     100% {
-      -webkit-background-size: 150%;
       background-size: 150%;
     }
 }
@@ -250,32 +236,23 @@ ul#strength {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
     background-image: url(jack.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: 100%;
     background-size: 100%;
     max-width: 700px;
     width: 200px;
     height: 100px;
     /* Standard syntax */
-    -webkit-animation-name: shrink;
     animation-name: shrink;
-    -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
-    -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    -webkit-animation-direction: alternate;
     animation-direction: alternate;
-    -webkit-animation-play-state: running;
     animation-play-state: running;
     -webkit-animation-name: shrink;
     -webkit-animation-duration: 2s;
@@ -284,19 +261,6 @@ ul#strength {
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
-}
-
-
-@-webkit-keyframes shrink
-{
-from {
-width: 100%;
-height: 417px;
-}
-to {
-width: 200px;
-height: 100px;
-}
 }
 
 
@@ -347,7 +311,6 @@ height: 100px;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -376,3 +339,45 @@ height: 100px;
   padding:0px 0px 0px 20px;
 }
 /*end contact*/
+/* large screens ----------- */
+@media only screen
+and (max-width : 1000px) {
+  .john_g_shultz {
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+.alert-warning {
+  margin: 20px!important;
+  padding: 0px!important;
+}
+.alert-warning > div {
+  padding: 0px!important;
+}  
+}
+/* mobile screens ----------- */
+@media only screen
+and (max-width : 480px) {
+  .alert-warning {
+    margin: 20px!important;
+    padding: 0px!important;
+  }
+  .alert-warning > div {
+    padding: 0px!important;
+  }
+  .photo {
+    margin: 10px auto !important;
+    left: 0px!important;
+    top: 0px!important;
+    transform: rotate(0deg)!important;
+    -ms-transform:rotate(0deg)!important; /* IE 9 */
+    -webkit-transform:rotate(0deg)!important; /* Opera, Chrome, and Safari */
+    -moz-transform:rotate(0deg)!important; /* Opera, Chrome, and Safari */
+    width: 100%;
+  }
+  .gallery {
+    margin: 0px auto;
+  }
+  .john_g_shultz {
+    margin: 0 auto;
+    width: 100%;
+  }
