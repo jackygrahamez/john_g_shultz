@@ -7,9 +7,6 @@ body {
 p {
   padding: 20px;
 }
-.nav-pills > li:nth-of-type(2) {
-  display: none;
-}
 .alert-warning {
   padding: 20px;
   border-radius: 20px;
@@ -92,7 +89,6 @@ p {
 @keyframes appear {
   0%   { opacity: 0; }
   100% { opacity: 1; }
->>>>>>> FETCH_HEAD
 }
 
 .bike {

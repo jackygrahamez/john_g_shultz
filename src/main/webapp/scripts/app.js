@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var johnGShultzApp = angular.module('johnGShultzApp', ['ngTouch', 'angular-carousel', 'http-auth-interceptor', 'tmh.dynamicLocale',
+var johnGShultzApp = angular.module('johnGShultzApp', ['http-auth-interceptor', 'tmh.dynamicLocale',
     'ngResource', 'ngRoute', 'ngCookies', 'pascalprecht.translate']);
 
 johnGShultzApp
