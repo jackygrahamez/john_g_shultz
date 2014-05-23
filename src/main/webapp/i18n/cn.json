@@ -136,90 +136,90 @@
             "button": "节省"
         },
         "messages": {
-            "error": "<strong>An error has occured!</strong> Settings could not be saved.",
-            "success": "<strong>Settings saved!</strong>",
+            "error": "<strong>发生错误！</strong> 设置无法保存。",
+            "success": "<strong>设置保存！</strong>",
             "validate": {
                 "firstname": {
-                    "required": "Your first name is required.",
-                    "minlength": "Your first name is required to be at least 1 character",
-                    "maxlength": "Your first name cannot be longer than 50 characters"
+                    "required": "你的名字是必需的。",
+                    "minlength": "您的名字要求是至少1个字符",
+                    "maxlength": "您的名字不能超过50个字符"
                 },
                 "lastname": {
-                    "required": "Your last name is required.",
-                    "minlength": "Your last name is required to be at least 1 character",
-                    "maxlength": "Your last name cannot be longer than 50 characters"
+                    "required": "您的姓氏是必需的。",
+                    "minlength": "您的姓氏必须是至少1个字符",
+                    "maxlength": "您的姓氏不能超过50个字符"
                 },
                 "email": {
-                    "required": "Your e-mail is required.",
-                    "invalid": "Your e-mail is invalid.",
-                    "minlength": "Your e-mail is required to be at least 1 character",
-                    "maxlength": "Your e-mail cannot be longer than 50 characters"
+                    "required": "您的电子邮件是必需的。",
+                    "invalid": "您的电子邮件是无效的。",
+                    "minlength": "您的电子邮件要求是至少1个字符",
+                    "maxlength": "您的电子邮件不能超过50个字符"
                 }
             }
         }
     },
     "password": {
-        "title": "Password for [<b>{{username}}</b>]",
+        "title": "密码 [<b>{{username}}</b>]",
         "form": {
-            "newpassword": "New password",
-            "newpassword.placeholder": "New password",
-            "confirmpassword": "New password confirmation",
-            "confirmpassword.placeholder": "Confirm the new password",
-            "button": "Save"
+            "newpassword": "新密码",
+            "newpassword.placeholder": "新密码",
+            "confirmpassword": "确认新密码",
+            "confirmpassword.placeholder": "确认新密码",
+            "button": "节省"
         },
         "messages": {
             "error": {
-                "global": "<strong>An error has occured!</strong> The password could not be changed.",
-                "dontmatch" : "The password and its confirmation do not match!"
+                "global": "<strong>发生错误！</strong> 该密码不能被改变。",
+                "dontmatch" : "该密码并确认不匹配！"
             },
-            "success": "<strong>Password changed!</strong>",
+            "success": "<strong>密码改了！</strong>",
             "validate": {
                 "newpassword": {
-                    "required": "Your password is required.",
-                    "minlength": "Your password is required to be at least 5 characters",
-                    "maxlength": "Your password cannot be longer than 50 characters",
-                    "strength": "Password strength:"
+                    "required": "您需要提供密码。",
+                    "minlength": "您的密码必须至少为5个字符",
+                    "maxlength": "您的密码不能超过50个字符",
+                    "strength": "密码强度:"
                 },
                 "confirmpassword": {
-                    "required": "Your confirm password is required.",
-                    "minlength": "Your confirm password is required to be at least 5 character",
-                    "maxlength": "Your confirm password cannot be longer than 50 characters"
+                    "required": "需要您的确认密码。",
+                    "minlength": "您的确认密码必须至少为5个字符",
+                    "maxlength": "您的确认密码不能超过50个字符"
                 }
             }
         }
     },
     "sessions": {
-        "title": "Active sessions for [<b>{{username}}</b>]",
+        "title": "活动会话 [<b>{{username}}</b>]",
         "table": {
-            "ipaddress": "IP address",
-            "useragent": "User Agent",
-            "date": "Date",
-            "button": "Invalidate"
+            "ipaddress": "互联网协议地址",
+            "useragent": "用户代理",
+            "date": "日期",
+            "button": "废止"
         },
         "messages": {
-            "success": "<strong>Session invalidated!</strong>",
-            "error": "<strong>An error has occured!</strong> The session could not be invalidated."
+            "success": "<strong>会话无效！</strong>",
+            "error": "<strong>发生错误！</strong> 会话不能失效。"
         }
 
     },
     "tracker": {
-        "title": "Real-time user activities",
+        "title": "实时用户活动",
         "table": {
-            "userlogin": "User",
-            "ipaddress": "IP Address",
-            "userAgent": "User agent",
-            "page": "Current page",
-            "time": "Time"
+            "userlogin": "用户",
+            "ipaddress": "互联网协议地址",
+            "userAgent": "用户代理",
+            "page": "当前页",
+            "time": "时间"
         }
     },
     "metrics": {
-        "title": "Application Metrics",
-        "refresh.button": "Refresh",
+        "title": "申请指标",
+        "refresh.button": "刷新",
         "health": {
-            "title": "Heath checks",
-            "database": "Database: ",
-            "email": "Email: ",
-            "stacktrace": "Stacktrace"
+            "title": "健康检查",
+            "database": "数据库: ",
+            "email": "电子邮件: ",
+            "stacktrace": "堆栈跟踪"
         },
         "jvm": {
             "title": "JVM Metrics",
