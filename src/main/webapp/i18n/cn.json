@@ -222,65 +222,65 @@
             "stacktrace": "堆栈跟踪"
         },
         "jvm": {
-            "title": "JVM Metrics",
+            "title": "JVM 指标",
             "memory": {
-                "title": "Memory",
-                "total": "Total Memory",
-                "heap": "Heap Memory",
-                "nonheap": "Non-Heap Memory"
+                "title": "记忆",
+                "total": "总记忆体",
+                "heap": "堆内存",
+                "nonheap": "非堆内存"
             },
             "threads": {
-                "title": "Threads",
-                "all": "All",
-                "runnable": "Runnable",
-                "timedwaiting": "Timed waiting",
-                "waiting": "Waiting",
-                "blocked": "Blocked",
+                "title": "主题",
+                "all": "所有",
+                "runnable": "可运行",
+                "timedwaiting": "定时等待",
+                "waiting": "等候",
+                "blocked": "封锁",
                 "dump": {
-                    "title": "Threads dump",
+                    "title": "线程转储",
                     "id": "Id: ",
-                    "blockedtime": "Blocked Time",
-                    "blockedcount": "Blocked Count",
-                    "waitedtime": "Waited Time",
-                    "waitedcount": "Waited Count",
-                    "lockname": "Lock name",
-                    "stacktrace": "Stacktrace",
-                    "show": "Show",
-                    "hide": "Hide"
+                    "blockedtime": "封锁时间",
+                    "blockedcount": "阻塞数",
+                    "waitedtime": "等待时间",
+                    "waitedcount": "等待计数",
+                    "lockname": "锁名",
+                    "stacktrace": "堆栈跟踪",
+                    "show": "节目",
+                    "hide": "隐藏"
                 }
             },
             "gc": {
-                "title": "Garbage collections",
-                "marksweepcount": "Mark Sweep count",
-                "marksweeptime": "Mark Sweep time",
-                "scavengecount": "Scavenge count",
-                "scavengetime": "Scavenge time"
+                "title": "垃圾回收",
+                "marksweepcount": "马克扫描次数",
+                "marksweeptime": "马克扫描时间",
+                "scavengecount": "清除计数",
+                "scavengetime": "清除时间"
             },
             "http": {
-                "title": "HTTP requests (events per second)",
-                "active": "Active requests:",
-                "total": "Total requests:",
+                "title": "HTTP请求（每秒事件）",
+                "active": "活动的请求:",
+                "total": "总的要求:",
                 "table": {
-                    "code": "Code",
-                    "count": "Count",
-                    "mean": "Mean",
-                    "average": "Average"
+                    "code": "码",
+                    "count": "算",
+                    "mean": "平均值",
+                    "average": "平均"
                 },
                 "code": {
-                    "ok": "Ok",
-                    "notfound": "Not found",
-                    "servererror": "Server Error"
+                    "ok": "行",
+                    "notfound": "未找到",
+                    "servererror": "服务器错误"
                 }
             }
         },
         "servicesstats": {
-            "title": "Services statistics (time in millisecond)",
+            "title": "服务统计（时间，单位为毫秒",
             "table": {
-                "name": "Service name",
-                "count": "Count",
-                "mean": "Mean",
-                "min": "Min",
-                "max": "Max",
+                "name": "服务名称",
+                "count": "算",
+                "mean": "意味着",
+                "min": "最低限度",
+                "max": "最大",
                 "p50": "p50",
                 "p75": "p75",
                 "p95": "p95",
@@ -289,52 +289,52 @@
         },
         "ehcache": {
             "title": "Ehcache statistics",
-            "cachename": "Cache name",
-            "objects": "Objects",
-            "hits": "Hits",
-            "misses": "Misses",
-            "evictioncount": "Eviction count",
-            "mean": "Mean get time (ms)"
+            "cachename": "缓存 名称",
+            "objects": "对象",
+            "hits": "点击",
+            "misses": "小姐",
+            "evictioncount": "驱逐数",
+            "mean": "平均获取时间 (ms)"
         }
     },
     "logs": {
-        "title": "Logs",
-        "nbloggers": "There are {{ total }} loggers.",
-        "filter": "Filter",
+        "title": "航海日志",
+        "nbloggers": "有 {{ total }} 航海日志.",
+        "filter": "过滤",
         "table": {
-            "name": "Name",
-            "level": "Level"
+            "name": "名称",
+            "level": "阶段"
         }
     },
     "audits": {
-        "title": "Audits",
+        "title": "审计",
         "filter": {
-            "title": "Filter per date",
-            "from": "from",
-            "to": "to",
+            "title": "每日期过滤器",
+            "from": "从",
+            "to": "至",
             "button": {
-                "weeks": "Weeks",
-                "today": "today",
-                "clear": "clear",
-                "close": "close"
+                "weeks": "周",
+                "today": "今天",
+                "clear": "明确",
+                "close": "关闭"
             }
         },
         "table": {
             "header": {
-                "principal": "User",
-                "date": "Date",
-                "status": "State",
-                "data": "Extra data"
+                "principal": "用户",
+                "date": "日期",
+                "status": "态",
+                "data": "额外的数据"
             },
             "data": {
-                "remoteAddress": "Remote Address:"
+                "remoteAddress": "远程地址:"
             }
         }
 
     },
     "errors": {
-        "title": "Error page!",
-        "403": "You are not authorized to access the page."
+        "title": "错误页面!",
+        "403": "您没有权限访问该页面。"
     },
-    "footer": "This is your footer"
+    "footer": "这是你的页脚"
 }
