@@ -64,76 +64,76 @@
         "e2" : {
           "title": "开发人员/ DBA",
           "durration": "显然，公司2012年3月 - 2013年6月（1年4个月）纽约，纽约",
-          "description": "Developing iOS Webkit modules using Jade, Stylus, client side Javascript and server side NodeJS Javascripting. Administrating and generating reports on MongoDB."
+          "description": "用玉，手写笔，客户端的JavaScript和服务器端的NodeJS JavaScript编程开发的iOS的Webkit模块。行政的和生成的MongoDB的报告。"
         },
         "e3" : {
-          "title": "Web Developer",
-          "durration": "Villas by Linda Smith September 2010 – March 2011 (7 months)",
-          "description": "Website developing and content administration."
+          "title": "Web开发",
+          "durration": "别墅由2010年琳达·史密斯月 - 2011年3月（7月）",
+          "description": "网站发展和内容管理。"
         },
         "e4" : {
-          "title": "Helpdesk Supervisor",
-          "durration": "The National Academies August 2004 – March 2010 (5 years 8 months) Washington, DC",
-          "description": "Technolgoy support, training, reporting and management"
+          "title": "服务台主管",
+          "durration": "美国国家科学院2004年8月 - 2010年3月（5年8个月）华盛顿特区",
+          "description": "技术支持，培训，报告和管理"
         },
         "e5" : {
-          "title": "Internship",
-          "durration": "Jane Goodall Institute August 2003 – December 2003 (5 months)",
-          "description": "Managing the membership access database. Reporting on Raiser's Edge Oracle database. Providing customer service to program members. Developing GIS component to system."
+          "title": "实习",
+          "durration": "珍古道尔研究会2003年8月 - 2003年12月（5月）",
+          "description": "管理成员访问数据库。报告雷塞的边缘Oracle数据库上。提供客户服务，计划成员。开发GIS组件系统。"
         },
         "e6" : {
-          "title": "10gen (the MongoDB company)",
-          "durration": "M101 Mongo for Developers 2012 – 2012",
-          "description": "Learned how to use MongoDB in the context of application development https://s3.amazonaws.com/edu-cert.10gen.com/downloads/e07a6da9252a4c6db970aa396b4ad71c/Certificate.pdf"
+          "title": "10gen公司（MongoDB的公司）",
+          "durration": "M101蒙戈面向开发人员的2012至2012年",
+          "description": "学会了如何使用MongoDB的在应用程序开发的背景下 https://s3.amazonaws.com/edu-cert.10gen.com/downloads/e07a6da9252a4c6db970aa396b4ad71c/Certificate.pdf"
         },
         "e7" : {
-          "title": "American University",
-          "durration": "Science Masters; Applied Sciences degree focused; Bachelors, Biotechnology 2004 – 2006"
+          "title": "美国大学",
+          "durration": "科学大师;应用科学学士学位重点;学士，生物技术2004 - 2006"
         },
         "e8" : {
-          "title": "University of Vermont",
-          "durration": "BS, Biology 1996 – 2000",
-          "description": "Designing and updating web, mobile web and mobile apps using the following technologies: Servers (ASP.NET, PHP, Tomcat, Java, Spring Framework, NODEJS), DBs (Oracle, MySQL, SQL Server, MongoDB), Mobile apps (iOS), web development (CSS3, HTML5, jQuery). Experience with responsive web design and fallback development for legacy (IE) browsers. Experience with UI/UX design process."
+          "title": "佛蒙特大学",
+          "durration": "BS, 生物学2096至00年",
+          "description": "设计和使用了以下技术更新网络，移动网络和移动应用程序：服务器（ASP.NET，PHP，Tomcat的，爪哇，Spring框架，的NodeJS），星展银行（甲骨文，MySQL和SQL Server中，MongoDB的），移动应用程序（IOS），网络的发展（CSS3，HTML5和jQuery）。有响应的网页设计和开发后备旧版（IE）浏览器的体验。与UI / UX设计过程中的经验。"
         },
         "e9" : {
-          "title": "Web Development",
+          "title": "Web开发",
           "description": "AngularJS, NodeJS, MongoDB, Yeoman, Grunt, Bower, Foundation, Bootstrap, JQuery, CSS3"
         },
         "e10" : {
-          "title": "Mobile App Development",
+          "title": "移动应用开发",
           "description": "iOS, Android, PhoneGap, CocoonJS"
         },
         "e11" : {
-          "title": "Database",
+          "title": "数据库",
           "description": "MongoDB, MySQL, Oracle"
         }
     },
     "login": {
-        "title": "Authentication",
+        "title": "认证",
         "form": {
-            "username": "Login",
-            "username.placeholder": "Your login",
-            "password": "Password",
-            "password.placeholder": "Your password",
-            "rememberme": "Automatic Login",
-            "button": "Authenticate"
+            "username": "注册",
+            "username.placeholder": "您的登录信息",
+            "password": "密码",
+            "password.placeholder": "您的密码",
+            "rememberme": "自动登录",
+            "button": "认证"
         },
         "messages": {
             "error": {
-                "authentication": "<strong>Authentication failed!</strong> Please check your credentials and try again."
+                "authentication": "<strong>验证失败！</strong> 请检查您的凭据，然后再试一次。"
             }
         }
     },
     "settings": {
-        "title": "User settings for [<b>{{username}}</b>]",
+        "title": "用户设置 [<b>{{username}}</b>]",
         "form": {
-            "firstname": "First Name",
-            "firstname.placeholder": "Your first name",
-            "lastname": "Last Name",
-            "lastname.placeholder": "Your last name",
-            "email": "E-mail",
-            "email.placeholder": "Your e-mail",
-            "button": "Save"
+            "firstname": "名字",
+            "firstname.placeholder": "您的名字",
+            "lastname": "姓",
+            "lastname.placeholder": "您的姓氏",
+            "email": "电子邮件",
+            "email.placeholder": "您的电子邮件",
+            "button": "节省"
         },
         "messages": {
             "error": "<strong>An error has occured!</strong> Settings could not be saved.",
