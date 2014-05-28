@@ -1,36 +1,58 @@
-# Disable the spring security default configuration from spring-boot-actuator
-management.security.enabled: true
-security.basic.enabled: false
-
-# Disable Jolokia - An http/json bridge for remote JMX access
-endpoints.jolokia.enabled: false
-
-# security configuration (this key should be unique for your application, and kept secret)
-jhipster.security.rememberme.key: john_g_shultz
-
-async:
-    corePoolSize: 2
-    maxPoolSize: 50
-    queueCapacity: 10000
+server:
+    port: 8080
+    address: localhost
 
 spring:
-    mail:
-        host: localhost
-        port: 25
-        user:
-        password:
-        protocol: smtp
-        tls: false
-        auth: false
+    profiles: prod
+    datasource:
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        url: jdbc:postgresql://ec2-54-225-182-133.compute-1.amazonaws.com/dekrmq10ij3nsl?user=wrjuntzkkyndjm&password=aEzaIUVinfxTv4jorCIqtTbwn9&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+        databaseName:
+        serverName:
+        username: wrjuntzkkyndjm
+        password: aEzaIUVinfxTv4jorCIqtTbwn9
 
-    messageSource:
-        cacheSeconds: 1
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        database: H2
+        openInView: false
+        show_sql: true
+        generate-ddl: false
+        hibernate:
+            ddl-auto: none
+            naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+        properties:
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
 
-swagger:
-    apiDocsLocation: http://localhost:8080
-    title: john_g_shultz API
-    description: john_g_shultz applications and beyond!
-    termsOfServiceUrl: http://jhipster.github.io/
-    contact:
-    license: Apache 2.0
-    licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+    thymeleaf:
+        mode: XHTML
+        cache: false
+
+metrics:
+    jmx.enabled: true
+    graphite:
+        enabled: false
+        host:
+        port:
+
+cache:
+    timeToLiveSeconds: 3600
+    ehcache:
+        maxBytesLocalHeap: 16M
+
+# You can add as many as folders to watch
+# You just need to add a dash + the directory to watch
+hotReload:
+    enabled: true
+    package:
+      project: com.john_g_shultz.site
+      domain: com.john_g_shultz.site.domain
+      restdto: com.john_g_shultz.site.web.rest.dto
+    liquibase:
+      defaultCatalogName:
+      defaultSchema: public
+    watchdir:
+      - target/classes
