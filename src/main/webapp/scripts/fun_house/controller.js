@@ -5,16 +5,28 @@ johnGShultzApp.controller('Fun_houseController', ['$scope', 'resolvedFun_house',
 
         $scope.fun_houses = resolvedFun_house;
         $scope.gallery = [
-        { path: "../images/audrey.jpg" },
-        { path: "../images/average.bmp" },
-        { path: "../images/bieber_small.jpg" },
-        { path: "../images/cage.jpg" },
-        { path: "../images/ironman.jpg" },
-        { path: "../images/jinx.jpg" },
-        { path: "../images/joconde.jpg" },
-        { path: "../images/SeanConnery.jpg" },
-        { path: "../images/skullmask.jpg" },
-        { path: "../images/vendetta.jpg" }
+        { path: "../images/audrey.jpg", pathMod: "../images/audreyMod.jpg" },
+        { path: "../images/average.bmp", pathMod: "../images/average.bmp" },
+        { path: "../images/bieber_small.jpg", pathMod: "../images/bieber_smallMod.jpg" },
+        { path: "../images/cage.jpg", pathMod: "../images/cageMod.jpg" },
+        { path: "../images/ironman.jpg", pathMod: "../images/ironmanMod.jpg" },
+        { path: "../images/jinx.jpg", pathMod: "../images/jinxMod.jpg" },
+        { path: "../images/joconde.jpg", pathMod: "../images/jocondeMod.jpg" },
+        { path: "../images/SeanConnery.jpg", pathMod: "../images/SeanConneryMod.jpg" },
+        { path: "../images/skullmask.jpg", pathMod: "../images/skullmaskMod.jpg" },
+        { path: "../images/vendetta.jpg", pathMod: "../images/vendetta.jpg" }
+        ];
+        $scope.mod_gallery = [
+        { pathMod: "../images/audreyMod.jpg" },
+        { pathMod: "../images/averageMod.bmp" },
+        { pathMod: "../images/bieber_smallMod.jpg" },
+        { pathMod: "../images/cageMod.jpg" },
+        { pathMod: "../images/ironmanMod.jpg" },
+        { pathMod: "../images/jinxMod.jpg" },
+        { pathMod: "../images/jocondeMod.jpg" },
+        { pathMod: "../images/SeanConneryMod.jpg" },
+        { pathMod: "../images/skullmaskMod.jpg" },
+        { pathMod: "../images/vendettaMod.jpg" }
         ];
         for (var i = 0; i < $scope.gallery.length; i++) {
           $scope.gallery[i].d = randomN(true)+"deg";

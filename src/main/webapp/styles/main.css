@@ -76,7 +76,6 @@ p {
   background: url("../images/funhousebkg.jpg") no-repeat 50% 50%;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
   min-height: 600px;
 }
 .fun_house > .fun_house_inner .photo {
