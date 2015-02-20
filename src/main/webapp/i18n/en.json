@@ -50,7 +50,7 @@
     "resume":{
         "title": "Resume",
         "summary": "Summary",
-        "summary_content": "As a professional I have enjoyed working with many impressive people who I have learned from. Over the past three years I have worked with both front end and backend web technologies.",
+        "summary_content": "I am a full stack developer with experience developing for web and mobile technologies. Currently I am in preparing my first native Android app for release. I have a diverse career and academic background with a great emphasis on Life Sciences. There are many resources I used to keep current with emerging technologies: Github, StackoverFlow & Code School.",
         "header": {
           "experience": "Experience",
           "education": "Education",
@@ -58,7 +58,7 @@
         },
         "e1" : {
           "title": "Web Developer",
-          "durration": "The Lathe, March 2011 – Present (3 years 2 months) New York, NY",
+          "durration": "The Lathe, March 2011 – January 2015 (4 years 10 months) New York, NY",
           "description": "Designing and updating web, mobile web and mobile apps using the following technologies: Servers (ASP.NET, PHP, Tomcat, Java, Spring Framework, NODEJS), DBs (Oracle, MySQL, SQL Server, MongoDB), Mobile apps (iOS), web development (CSS3, HTML5, jQuery). Experience with responsive web design and fallback development for legacy (IE) browsers. Experience with UI/UX design process."
         },
         "e2" : {
